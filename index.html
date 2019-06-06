@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+    
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+            background: linear-gradient(125deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('anime-art-artistic-262272.jpg');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            font-family: 'Montserrat', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .title {
+            font-size: 3rem;
+            margin-bottom: 5.5rem;
+            color: #fff;
+        }
+
+        .btn {
+            padding: 1.5rem 2rem;
+            color: #fff;
+            font-size: 1rem;
+            border-radius: 50%;
+            background: #0A2239;
+            border: none;
+            outline: none;
+            font-family: 'Montserrat', sans-serif;
+            cursor: pointer;
+        }
+
+        
+
+        .text {
+            font-size: 2.5rem;
+            margin-top: 4.5rem;
+            color: #fff;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1)
+            }
+
+            50% {
+               /* transform: scale(1.2);*/
+                opacity: 0.3;
+            }
+
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                transform: translateY(20%);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @media(max-width:700px) {
+            .title {
+                font-size: 2.5rem;
+                text-align: center;
+            }
+        }
+
+        
+    
+    
+    </style>
+</head>
+<body>
+    <h1 class="title">Press on The Button To Talk</h1>
+    <button class="btn"><i class="fas fa-microphone-alt fa-4x"></i></button>
+
+
+    <h2 class="text"></h2>
+
+    <script src="https://kit.fontawesome.com/fb012272f7.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
